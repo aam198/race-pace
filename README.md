@@ -1,4 +1,4 @@
-# race-pace App
+# race-pace app
 
 # Getting Started with Create React App
 
