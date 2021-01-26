@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "racepace3de80c11": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
