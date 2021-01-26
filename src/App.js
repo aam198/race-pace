@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h2> Up and Running! </h2>
-        <h3> and including Auth! </h3>
+        <h3> and now including Auth! </h3>
         <a
           className="App-link"
           href="https://reactjs.org"
