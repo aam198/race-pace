@@ -10,6 +10,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h2> Up and Running! </h2>
         <h3> and now including Auth! </h3>
+        <p>Testing a redeployment with version change</p>
         <a
           className="App-link"
           href="https://reactjs.org"
