@@ -74,9 +74,10 @@ function App() {
         value={formData.description}
           />
           <input
-  type="file"
-  onChange={onChange}
-/>
+             type="file"
+              onChange={onChange}
+            />
+
       <button onClick={createNote}>Create Pace Goal</button>
       <div style={{marginBottom: 30}}>
       {
@@ -86,7 +87,7 @@ function App() {
               <p>{note.description}</p>
               <button onClick={() => deleteNote(note)}>Delete note</button>
               {
-                note.image && <img src={note.image} style={{width: 400}} />
+                note.image && <img alt="image uploaded" src={note.image} style={{width: 400}} />
               }
             </div>
           ))
