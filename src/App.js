@@ -1,10 +1,12 @@
 import React, {useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { API, Storage } from 'aws-amplify';
+import { API, AWSKinesisFirehoseProvider, Storage } from 'aws-amplify';
 // import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import { listNotes } from './graphql/queries';
 import { createNote as createNoteMutation, deleteNote as deleteNoteMutation } from './graphql/mutations';
+import S3FileUpload from 'react-s3';
+
 
 const initialFormState = { name: '', description: '' }
 
@@ -56,6 +58,17 @@ function App() {
     fetchNotes();
   }
 
+//   const config = {
+//     bucketName: 'myBucket',
+//     dirName: 'photos', /* optional */
+//     region: 'us-ease-1',
+//     accessKeyId: aws.accessKeyId,
+//     secretAccessKey: aws.secretAccessKey,
+// }
+ 
+// /*  Notice that if you don't provide a dirName, the file will be automatically uploaded to the root of your bucket */
+ 
+ 
 
   return (
     <div className="App">
@@ -93,6 +106,10 @@ function App() {
           ))
         }
       </div>
+
+      <h3>S3 Upload</h3>
+
+
 
       {/* <AmplifySignOut /> */}
     </div>
